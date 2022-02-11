@@ -4,7 +4,7 @@
             <img src="{{'img/dc-logo.png'}}" alt="">
             <ul>
                 <li><a href="#">Characters</a></li>
-                <li><a href="#" class="active">Comics</a></li>
+                <li><a href="{{route("homepage")}}" class="active">Comics</a></li>
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">Tv</a></li>
                 <li><a href="#">Games</a></li>

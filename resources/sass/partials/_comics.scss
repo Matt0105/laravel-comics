@@ -21,11 +21,22 @@ main {
     display: flex;
     flex-direction: column;
 
+    .section-badge {
+        align-self: flex-start;
+        position: relative;
+        bottom: 25px;
+        padding: 0.7rem;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: $DC-blue;
+    }
+
     .comics-list {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        padding: 4rem 0;
 
         .comic-item {
             width: calc(100% / 6 );

@@ -205,11 +205,21 @@ main {
   display: flex;
   flex-direction: column;
 }
+.main-container .section-badge {
+  align-self: flex-start;
+  position: relative;
+  bottom: 25px;
+  padding: 0.7rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #0282F9;
+}
 .main-container .comics-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 4rem 0;
 }
 .main-container .comics-list .comic-item {
   width: 16.6666666667%;
@@ -244,4 +254,45 @@ main {
 }
 .main-container .load-more:hover {
   cursor: pointer;
+}
+
+.comic-main {
+  width: 100%;
+}
+
+.separation {
+  width: 100%;
+  height: 80px;
+  background-color: #0282F9;
+}
+
+.comic-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.comic-container .comic-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  background-color: #2eb12e;
+}
+.comic-container .comic-info-container .comic-info {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.comic-container .comic-info-container .availability {
+  display: flex;
+  justify-content: space-between;
+}
+.comic-container .comic-info-container .check {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+  border-left: 1px solid white;
 }
