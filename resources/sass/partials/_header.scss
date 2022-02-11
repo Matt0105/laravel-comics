@@ -1,0 +1,45 @@
+.header-container {
+    // @include dimensions(100%, 80px);
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+img {
+    height: 80%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+
+    li a{
+        margin: 0 0.8rem;
+        padding: calc(80px / 2 - 0.8rem + 2px) 0; //altezza header / 2 - altezza font + (bordo / 2)
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        &:hover,
+        &:active,
+        &.active {
+            color: $DC-blue;
+            border-bottom: 4px solid $DC-blue;
+        }
+    }
+}
+
+.jumbo img {
+    height: 500px;
+}
