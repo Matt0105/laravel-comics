@@ -64,7 +64,7 @@
   
       <div class="footer-bottom">
           <div class="container">
-              <button>Sign Up Now!</button>
+              <button class="sign-up">Sign Up Now!</button>
   
               <div class="social">
                   <h2>Follow us</h2>

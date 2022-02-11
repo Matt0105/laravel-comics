@@ -46,10 +46,6 @@ header ul li a:hover, header ul li a:active, header ul li a.active {
   border-bottom: 4px solid #0282F9;
 }
 
-.jumbo img {
-  height: 500px;
-}
-
 .footer-container {
   width: 100%;
   background-image: url("../../img/footer-bg.jpg");
@@ -124,7 +120,7 @@ header ul li a:hover, header ul li a:active, header ul li a.active {
   z-index: 100;
 }
 
-button {
+.sign-up {
   border: 1px solid #0282F9;
   background-color: #303030;
   padding: 1rem;
@@ -133,7 +129,7 @@ button {
   cursor: pointer;
   transition: all 0.3s;
 }
-button:hover {
+.sign-up:hover {
   background-color: #0282F9;
 }
 
@@ -186,4 +182,66 @@ button:hover {
 .buy ul li a img {
   height: 2rem;
   margin-right: 1rem;
+}
+
+main {
+  width: 100%;
+  background-color: #1c1c1c;
+}
+
+.jumbo {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.jumbo img {
+  width: 100%;
+}
+
+.main-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .comics-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 4rem 0;
+}
+.main-container .comics-list .comic-item {
+  width: 16.6666666667%;
+  padding: 1.5rem 1rem;
+}
+.main-container .comics-list .comic-item a {
+  text-decoration: none;
+  color: white;
+}
+.main-container .comics-list .comic-item .comic-thumbnail {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.main-container .comics-list .comic-item .comic-name {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+.main-container .load-more {
+  background-color: #0282F9;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.7rem 1.1rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+.main-container .load-more:hover {
+  cursor: pointer;
 }
