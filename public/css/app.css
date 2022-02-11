@@ -154,3 +154,36 @@ button:hover {
 .social ul li {
   margin-right: 0.7rem;
 }
+
+.buy {
+  position: relative;
+  z-index: 100;
+  background-color: #0282F9;
+}
+.buy .cta-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.buy ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.buy ul li:last-child img {
+  height: 1.6rem;
+}
+.buy ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 2rem 1rem;
+  font-size: 0.8rem;
+}
+.buy ul li a img {
+  height: 2rem;
+  margin-right: 1rem;
+}

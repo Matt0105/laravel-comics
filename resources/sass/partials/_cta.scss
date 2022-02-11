@@ -1,0 +1,38 @@
+.buy {
+    position: relative;
+    z-index: 100;
+    background-color: $DC-blue;
+
+    .cta-container {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+
+        li:last-child img {
+            height: 1.6rem;
+        }
+
+        li a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            padding: 2rem 1rem;
+            font-size: 0.8rem;
+            
+            img {
+                height: 2rem;
+                margin-right: 1rem;
+            }
+            
+        }
+    }
+}
