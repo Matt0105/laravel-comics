@@ -1,0 +1,114 @@
+.footer-container {
+    width: 100%;
+    background-image: url("../../img/footer-bg.jpg");
+
+    .myimg {
+        position: absolute;
+    }
+}  
+
+.container-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    margin: 2rem 0;
+    .col {
+        position: relative;
+        z-index: 100;
+
+        h2 {
+            margin-top: 1rem;
+            margin-bottom: 0.4rem;
+            margin-right: 2rem;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-right: 1rem;
+            li a {
+                display: block;
+                text-decoration: none;
+                color: gray;
+                padding-right: 0.5rem;
+                padding: 0.2rem 0;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.col-img {
+
+    .footer-dc-logo {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        height: 120%;
+        object-position: top;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: $footer-color;
+}
+
+.footer-bottom > .container {
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 100;
+}
+
+button {
+        border: 1px solid $DC-blue;
+        background-color: $footer-color;
+        padding: 1rem;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $DC-blue;
+        }
+    }
+
+.social {
+    display: flex;
+    align-items: center;
+
+    h2 {
+        font-size: 1.3rem;
+        color: $DC-blue;
+        text-transform: uppercase;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin-left: 1rem;
+
+        li {
+            margin-right: 0.7rem;
+        }
+    }
+}
