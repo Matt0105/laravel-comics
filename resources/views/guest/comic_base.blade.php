@@ -1,10 +1,10 @@
-@extends("guest.comic_base")
+@extends("guest.layout.base")
 
-@section('title')
-    Superman
+@section('pageTitle')
+    @yield("title")
 @endsection
 
-{{-- @section('content')
+@section('content')
     <div class="comic-main">
         <div class="jumbo">
             <img src="{{'img/jumbotron.jpg'}}" alt="">
@@ -105,4 +105,4 @@
             </div>
         </div>
     </div>
-@endsection --}}
+@endsection

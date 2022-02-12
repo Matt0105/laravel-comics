@@ -16,7 +16,7 @@
             <ul class="comics-list">
 
                 @foreach ($comics as $comic)
-                    <li class="comic-item"><a href="{{$comic["title"] === "Action Comics #1000: The Deluxe Edition" ? route("superman") : ''}}">
+                    <li class="comic-item"><a href="{{route($comic['title'])}}">
                         <img class="comic-thumbnail" src="{{$comic["thumb"]}}" alt="">
                         <h2 class="comic-name">{{$comic["title"]}}</h2>    
                     </a></li>
