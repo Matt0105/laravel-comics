@@ -11,36 +11,184 @@
 
 .comic-container {
     display: flex;
-    width: 80%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 4rem auto;
+
+    .thumb-container {
+        position: absolute;
+        top: 280px;
+        border: 2px solid white;
+        text-align: center;
+
+        .thumb-top{
+            height: 250px;
+        }
+
+        .lbl {
+            position: absolute;
+            left: 0;
+            text-transform: uppercase;
+            color: white;
+            font-size: 0.8rem;
+            background-color: rgb(64, 177, 211);
+            z-index: 100;
+            padding: 5px 0;
+        }
+
+        .view-gallery {
+            bottom: 0;
+            width: 100%;
+        }
+
+        .type {
+            top: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    .desc {
+        width: 70%;
+    }
 
     .comic-info-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        width: 90%;
         height: 50px;
         background-color: rgb(46, 177, 46);
+        font-weight: bold;
+        margin: 2rem 0;
+        border-bottom: 1px solid black;
+
 
         .comic-info {
             width: 70%;
             display: flex;
             justify-content: space-between;
             margin-left: 20px;
-        }
-        .availability {
-            display: flex;
-            justify-content: space-between;
-            .isAvailable {
+
+            .country-price {
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .price {
+                color: white;
+            }
+
+            .availability {
+                display: flex;
+                justify-content: space-between;
+                .isAvailable {
+                    margin-right: 20px;
+                    text-transform: uppercase;
+                    color: rgba(255, 255, 255, 0.7);
+                }
             }
         }
-
+        
         .check {
             display: flex;
             align-items: center;
+            justify-content: center;
+            width: 35%;
             height: 100%;
             padding: 0 1rem;
-            border-left: 1px solid white;
+            border-left: 1px solid black;
+            color: white;
+
+            & > i {
+                font-size: 0.8rem;
+                margin-left: 10px;
+            }
+        }
+
+    }
+
+    .comic-desc {
+        line-height: 25px;
+        width: 90%;
+        color: grey;
+    }
+
+    .adv-container {
+        width: 30%;
+        text-align: right;
+
+        & .adv-label {
+            text-transform: uppercase;
+            color: gray;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        & img {
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+.specs-container {
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    border-top: 1px solid lightgray;
+
+    .comic-container {
+        margin-bottom: 0;
+        padding-bottom: 5rem;
+        justify-content: space-between;
+
+        .item-container {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgrey;
+            padding: 1rem 0;
+
+            & h3 {
+                font-weight: 500;
+                font-size: 0.9rem;
+                color: rgb(50, 50, 63);
+            }
+
+            & .names {
+                width: 70%;
+
+                
+            }
+
+            & .name {
+                text-decoration: none;
+                color: rgb(47, 150, 182);
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+
+            .name.series {
+                text-transform: uppercase;
+            }
+
+            
+        }
+
+        .box-title {
+            border-bottom: 1px solid lightgrey;
+            padding-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .talent {
+            width: 45%;
+
+        }
+
+        .specs {
+            width: 45%;
+
+            & a, span {
+                width: 70%;
+            }
         }
     }
 }

@@ -268,16 +268,50 @@ main {
 
 .comic-container {
   display: flex;
-  width: 80%;
-  margin: 0 auto;
+  width: 70%;
+  margin: 4rem auto;
+}
+.comic-container .thumb-container {
+  position: absolute;
+  top: 280px;
+  border: 2px solid white;
+  text-align: center;
+}
+.comic-container .thumb-container .thumb-top {
+  height: 250px;
+}
+.comic-container .thumb-container .lbl {
+  position: absolute;
+  left: 0;
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8rem;
+  background-color: #40b1d3;
+  z-index: 100;
+  padding: 5px 0;
+}
+.comic-container .thumb-container .view-gallery {
+  bottom: 0;
+  width: 100%;
+}
+.comic-container .thumb-container .type {
+  top: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.comic-container .desc {
+  width: 70%;
 }
 .comic-container .comic-info-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   height: 50px;
   background-color: #2eb12e;
+  font-weight: bold;
+  margin: 2rem 0;
+  border-bottom: 1px solid black;
 }
 .comic-container .comic-info-container .comic-info {
   width: 70%;
@@ -285,14 +319,99 @@ main {
   justify-content: space-between;
   margin-left: 20px;
 }
-.comic-container .comic-info-container .availability {
+.comic-container .comic-info-container .comic-info .country-price {
+  color: rgba(255, 255, 255, 0.7);
+}
+.comic-container .comic-info-container .comic-info .price {
+  color: white;
+}
+.comic-container .comic-info-container .comic-info .availability {
   display: flex;
   justify-content: space-between;
+}
+.comic-container .comic-info-container .comic-info .availability .isAvailable {
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
 }
 .comic-container .comic-info-container .check {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 35%;
   height: 100%;
   padding: 0 1rem;
-  border-left: 1px solid white;
+  border-left: 1px solid black;
+  color: white;
+}
+.comic-container .comic-info-container .check > i {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.comic-container .comic-desc {
+  line-height: 25px;
+  width: 90%;
+  color: grey;
+}
+.comic-container .adv-container {
+  width: 30%;
+  text-align: right;
+}
+.comic-container .adv-container .adv-label {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.comic-container .adv-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.specs-container {
+  background-color: #f3f3f3;
+  width: 100%;
+  border-top: 1px solid lightgray;
+}
+.specs-container .comic-container {
+  margin-bottom: 0;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+}
+.specs-container .comic-container .item-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem 0;
+}
+.specs-container .comic-container .item-container h3 {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #32323f;
+}
+.specs-container .comic-container .item-container .names {
+  width: 70%;
+}
+.specs-container .comic-container .item-container .name {
+  text-decoration: none;
+  color: #2f96b6;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.specs-container .comic-container .item-container .name.series {
+  text-transform: uppercase;
+}
+.specs-container .comic-container .box-title {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 2rem;
+  font-weight: 500;
+}
+.specs-container .comic-container .talent {
+  width: 45%;
+}
+.specs-container .comic-container .specs {
+  width: 45%;
+}
+.specs-container .comic-container .specs a, .specs-container .comic-container .specs span {
+  width: 70%;
 }
