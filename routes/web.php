@@ -23,6 +23,10 @@ Route::get('comics/{id}', function ($id) {
     
     $comic = $collection->where("id", $id);
 
+    if($comic->count() === 0) {
+        abort(404);
+    }
+
     $singleComic = '';
     foreach ($comic as $value) {
         $singleComic = $value;
