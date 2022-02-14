@@ -3,7 +3,7 @@
 @extends("guest.layout.base")
 
 @section('pageTitle')
-    @yield($comic["title"])
+    {{$comic["title"]}}
 @endsection
 
 @section('content')

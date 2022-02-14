@@ -22,7 +22,6 @@ Route::get('comics/{id}', function ($id) {
     $collection = collect(config("comics"));
     
     $comic = $collection->where("id", $id);
-    // dd($comic);
 
     $singleComic = '';
     foreach ($comic as $value) {
