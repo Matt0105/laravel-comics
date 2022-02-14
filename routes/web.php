@@ -17,6 +17,43 @@ Route::get('/', function () {
     return view('guest.home', ["comics" => config("comics")]);
 })->name("homepage");
 
+Route::get('characters', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("characters");
+
+Route::get('movies', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("movies");
+
+Route::get('tv', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("tv");
+
+Route::get('games', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("games");
+
+Route::get('collectables', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("collectables");
+
+Route::get('videos', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("videos");
+
+Route::get('fans', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("fans");
+
+Route::get('news', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("news");
+
+Route::get('shop', function () {
+    return view('guest.home', ["comics" => config("comics")]);
+})->name("shop");
+
+
 Route::get('comics/{id}', function ($id) {
 
     $collection = collect(config("comics"));
