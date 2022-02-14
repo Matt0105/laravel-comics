@@ -1,4 +1,5 @@
-
+@php
+@endphp
 
 @extends("guest.layout.base")
 
@@ -9,15 +10,14 @@
 @section('content')
     <main>
         <div class="jumbo">
-            <img src="{{'img/jumbotron.jpg'}}" alt="">
+            <img src="{{asset('img/jumbotron.jpg')}}" alt="">
         </div>
         <div class="main-container">
             <span class="section-badge">current series</span>
             <ul class="comics-list">
-
                 @foreach ($comics as $comic)
-                    <li class="comic-item"><a href="{{route($comic['title'])}}">
-                        <img class="comic-thumbnail" src="{{$comic["thumb"]}}" alt="">
+                <li class="comic-item"><a href="{{route('comic', $comic['id'])}}">
+                <img class="comic-thumbnail" src="{{$comic["thumb"]}}" alt="">
                         <h2 class="comic-name">{{$comic["title"]}}</h2>    
                     </a></li>
                 @endforeach

@@ -57,7 +57,7 @@
           
   
           <div class="col-img">
-              <img class="footer-dc-logo"src="{{'img/dc-logo-bg.png'}}" alt="">
+              <img class="footer-dc-logo"src="{{asset('img/dc-logo-bg.png')}}" alt="">
           </div>
           
         </div>
@@ -69,11 +69,11 @@
               <div class="social">
                   <h2>Follow us</h2>
                   <ul>
-                      <li><a href="#"><img src="{{'img/footer-facebook.png'}}" alt=""></a></li>
-                      <li><a href="#"><img src="{{'img/footer-twitter.png'}}" alt=""></a></li>
-                      <li><a href="#"><img src="{{'img/footer-youtube.png'}}" alt=""></a></li>
-                      <li><a href="#"><img src="{{'img/footer-pinterest.png'}}" alt=""></a></li>
-                      <li><a href="#"><img src="{{'img/footer-periscope.png'}}" alt=""></a></li>
+                      <li><a href="#"><img src="{{asset('img/footer-facebook.png')}}" alt=""></a></li>
+                      <li><a href="#"><img src="{{asset('img/footer-twitter.png')}}" alt=""></a></li>
+                      <li><a href="#"><img src="{{asset('img/footer-youtube.png')}}" alt=""></a></li>
+                      <li><a href="#"><img src="{{asset('img/footer-pinterest.png')}}" alt=""></a></li>
+                      <li><a href="#"><img src="{{asset('img/footer-periscope.png')}}" alt=""></a></li>
                   </ul>
               </div>
           </div>

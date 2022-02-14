@@ -1,7 +1,7 @@
 <header>
     <div class="header-container">
         <div class="container">
-            <img src="{{'img/dc-logo.png'}}" alt="">
+            <img src="{{asset('img/dc-logo.png')}}" alt="">
             <ul>
                 <li><a href="#">Characters</a></li>
                 <li><a href="{{route("homepage")}}" class="active">Comics</a></li>

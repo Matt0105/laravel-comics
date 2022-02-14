@@ -276,6 +276,10 @@ main {
   top: 280px;
   border: 2px solid white;
   text-align: center;
+  transition: all 0.5s;
+}
+.comic-container .thumb-container:hover {
+  transform: scale(1.5);
 }
 .comic-container .thumb-container .thumb-top {
   height: 250px;
@@ -344,6 +348,7 @@ main {
   padding: 0 1rem;
   border-left: 1px solid black;
   color: white;
+  cursor: pointer;
 }
 .comic-container .comic-info-container .check > i {
   font-size: 0.8rem;
@@ -357,6 +362,7 @@ main {
 .comic-container .adv-container {
   width: 30%;
   text-align: right;
+  cursor: pointer;
 }
 .comic-container .adv-container .adv-label {
   text-transform: uppercase;
